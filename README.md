@@ -1,3 +1,3 @@
-#My personal website
+# My personal website
 
-####Jekyll site, includes normalize, skeleton, font loader, folder structure.
+#### Jekyll site, includes normalize, skeleton, font loader, folder structure.
