@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Max Wirt!
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://maxwirt.com" # the base hostname & protocol for your site
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Build settings
+exclude:
+
+sass:
+  sass_dir: css
+
+# Plugin settings
+plugins:
+  - 'jekyll-feed'
+  - 'jekyll-sitemap'
+  - 'jekyll-assets'
+
+# jekyll-assets configuration
+assets:
+  autowrite: true
+  cache: .asset-cache
+  cache_type: filesystem
+  cdn:
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: true
+  assets:
+    - "*.png"
+    - "bundle.css"
+  sources:
+    - _assets/css
+    - _assets/css/sass
+    - _assets/css/sass/vendor
+    - _assets/css/sass/base
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/img
+    - _assets/js
+    - _assets/bootstrap
+  features:
+    liquid: true
+    integrity: true
+    # This will add height and width attributes for an img tag.
+    automatic_img_size: false
+    # This will add the digest path as an alt attribute for an img tag.
+    automatic_img_alt : false
