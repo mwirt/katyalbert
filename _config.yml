@@ -56,8 +56,8 @@ assets:
     - _assets/js
     - _assets/bootstrap
   features:
-    liquid: true
-    integrity: true
+    liquid: false
+    integrity: false
     # This will add height and width attributes for an img tag.
     automatic_img_size: false
     # This will add the digest path as an alt attribute for an img tag.

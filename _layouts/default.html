@@ -4,11 +4,24 @@
   {% include head.html %}
 
   <body>
-
-    <main class="main" aria-label="Content">
+    <header class="header">
+    	<a href="/">
+    		{% image maxwirt.jpg class="main-photo" alt="A photo of Max Wirt" %}
+    	</a>
+    	<ul>
+    	    <li><a href="/video">Video Production</a></li>
+    	    <li><a href="/music">Music</a></li>
+    	    <li><a href="/development">Web Design</a></li>
+    	    <li><a href="/cv">CV</a></li>
+    	    <li><a href="/contact">Contact</a></li>
+    	</ul>
+    </header>
+    <main class="main container" aria-label="Content">
       {{ content }}
     </main>
-
+    <footer>
+    	<p>Copyright 2017</p>
+    </footer>
   </body>
 
 </html>

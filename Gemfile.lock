@@ -78,8 +78,6 @@ DEPENDENCIES
   jekyll-assets
   jekyll-feed
   jekyll-sitemap
-  sass
-  sprockets-sass
 
 BUNDLED WITH
    1.14.4
