@@ -1,0 +1,13 @@
+<div class="post" id="{{ page.postid }}">
+	<h2 class="title">{{ page.title }}</h3>
+	{% if page.type == "vimeo" %}
+	<div class="video-embed">
+		<iframe src="https://player.vimeo.com/video/{{ page.video-id | excape }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+	{% else %}
+	<div class="video-embed">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.video-id | escape }}" frameborder="0" allowfullscreen></iframe>
+	</div>
+	{% endif %}
+	{{ content }}
+</div>

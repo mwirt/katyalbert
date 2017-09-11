@@ -1,0 +1,12 @@
+---
+layout: feed
+---
+<header><h1 class="video-heading">VIDEOS</h1></header>
+<div class="row">
+{% include videonavbar.html %}
+</div>
+{% for post in site.categories.video %}
+<article>
+{{ post }}
+</article>
+{% endfor %}

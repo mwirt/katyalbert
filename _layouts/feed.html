@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <header class="header">
+    	<a href="/">
+    		{% image http://placehold.it/100x100 class="home-photo" alt="A photo of Katy Albert" %}
+    	</a>
+    </header>
+    <div class="feed" aria-label="Content">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+
+</html>

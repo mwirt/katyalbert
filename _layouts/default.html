@@ -6,22 +6,17 @@
   <body>
     <header class="header">
     	<a href="/">
-    		{% image maxwirt.jpg class="main-photo" alt="A photo of Max Wirt" %}
+    		{% image http://placehold.it/100x100 class="home-photo" alt="A photo of Katy Albert" %}
     	</a>
-    	<ul>
-    	    <li><a href="/video">Video Production</a></li>
-    	    <li><a href="/music">Music</a></li>
-    	    <li><a href="/development">Web Design</a></li>
-    	    <li><a href="/cv">CV</a></li>
-    	    <li><a href="/contact">Contact</a></li>
-    	</ul>
     </header>
-    <main class="main container" aria-label="Content">
+    <main>
+    <div class="main container page" aria-label="Content">
       {{ content }}
+    </div>
+    <div class="secondary container page"><p>some content</p></div>
+    </div>
     </main>
-    <footer>
-    	<p>Copyright 2017</p>
-    </footer>
+    {% include footer.html %}
   </body>
 
 </html>

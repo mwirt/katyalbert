@@ -5,56 +5,24 @@ html
 body
   height: 100%
   margin: 0
-  background-color: $one-color
+  background-color: $b-color
 
 *, ::before, ::after
   box-sizing: inherit
 
-.clear-fix
-  overflow: auto
+main
+  white-space: nowrap
 
-.header
-  position: fixed
-  float: left
-  margin-left: 25px
-  li
-    list-style: none
-
-.main-title
-  text-decoration: underline
-
-.main 
-  max-width: 1000px
-  background-color: $two-color
-  position: relative
-  margin: 50px auto
-  padding: 25px
-  border-radius: 3px
-  color: $three-color
-
-.main-heading
-  font-family: $heading-font
-  color: $three-color
-  font-size: 2.4em
-
-
-.main-text
+.feed
+  max-width: 960px
+  display: block
   margin: auto
-  color: $three-color
-  padding: 50px
+  background-color: $b-color
 
-.main-photo
-  margin: 0 25px 25px 0
-  position: relative
-  height: 150px
-  width: 112.5px
-  border-radius: 3px
 
-.post-meta
-  text-align: right
-
-.post
-  border-top: 2px solid $three-color
+.page
+  display: inline-block
+  margin-top: 110px
 
 .video-embed
   position: relative
@@ -69,3 +37,72 @@ body
     left: 0
     width: 100%
     height: 100%
+
+.main-button-wrap
+  text-align: center
+  position: relative
+  h2
+    font-size: 1.4em
+
+
+.main-button
+  display: inline-block
+  margin: auto
+  position: relative
+  z-index: 1
+  opacity: 1
+  -webkit-transition: all 0.25s ease-in-out
+  -moz-transition: all 0.25s ease-in-out
+  -o-transition: all 0.25s ease-in-out
+  -ms-transition: all 0.25s ease-in-out
+  transition: all 0.25s ease-in-out
+
+
+
+.main-button:hover
+  opacity: 0
+  -webkit-transition: all 0.25s ease-in-out
+  -moz-transition: all 0.25s ease-in-out
+  -o-transition: all 0.25s ease-in-out
+  -ms-transition: all 0.25s ease-in-out
+  transition: all 0.25s ease-in-out
+
+.button-text
+  position: absolute
+  z-index: 0
+  margin: auto
+  right: 0
+  left: 0
+  top: 50%
+
+
+
+.home-photo
+  position: fixed
+  z-index: 1 !important
+  top: 0
+
+.videonavbar
+  z-index: 1 !important
+
+
+.videonavbar-list
+  font-size: 0
+  li
+    display: inline
+    padding: 0
+    margin: 0
+  a
+    text-decoration: none
+
+.videonavbar-img
+  height: 50px
+  width: 50px
+  opacity: 0.7
+.videonavbar-img:hover
+  opacity: 1
+
+.video-heading
+  margin: 50px auto 50px auto
+  text-align: center
+
